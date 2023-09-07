@@ -9,6 +9,9 @@ export interface User{
     isAdmin:boolean;
 }
 
+
+export type NewUser = Omit<User, 'id'>;
+
 export const UserSchema = new Schema<User>(
     {
         name: {type: String, required:true},

@@ -2,7 +2,7 @@ import { Router } from "express";
 import { sample_users } from "../data";
 import jwt from "jsonwebtoken";
 import asyncHandler from 'express-async-handler';
-import { User, UserModel } from "../models/user.molel";
+import { NewUser, User, UserModel } from "../models/user.molel";
 import { HTTP_BAD_REQUEST } from "../constants/http_status";
 import bcrypt from 'bcryptjs';
 const router = Router();
@@ -49,8 +49,8 @@ router.post('/register', asyncHandler(
 
         const encryptedPassword = await bcrypt.hash(password, 10);
 
-        const newUser: User = {
-            id:'',
+
+        const newUser: NewUser = {
             name,
             email: email.toLowerCase(),
             password: encryptedPassword,
