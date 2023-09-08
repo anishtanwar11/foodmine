@@ -46,9 +46,7 @@ router.post('/register', asyncHandler(
             return;
         }
         
-
         const encryptedPassword = await bcrypt.hash(password, 10);
-
 
         const newUser: NewUser = {
             name,
