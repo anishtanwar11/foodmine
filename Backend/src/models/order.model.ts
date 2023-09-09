@@ -34,7 +34,7 @@ export interface Order{
     totalPrice: number;
     name: string;
     address: string;
-    addressLatLng?:LatLng
+    // addressLatLng?:LatLng
     paymentId: string;
     status: OrderStatus;
     user: Types.ObjectId;
@@ -45,7 +45,7 @@ export interface Order{
 const orderSchema = new Schema<Order>({
     name: {type: String, required: true},
     address: {type: String, required: true},
-    addressLatLng: {type: LatLngSchema, required: true},
+    // addressLatLng: {type: LatLngSchema, required: true},
     paymentId: {type: String},
     totalPrice: {type: Number, required: true},
     items: {type: [OrderItemSchema], required: true},

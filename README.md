@@ -161,7 +161,7 @@
             4.  Add CSS
         4.  Add Auth Guard
 
- 7.  Save Order
+15.  Save Order
         1. Add Order Model
         2. Add Order Status Enum
         3. Add Auth Middleware
@@ -172,7 +172,7 @@
            1. Add create Method
         8. Add Auth Interceptor
 
-18. Payment Page
+16. Payment Page
     1. Generate Component
     2. Add 'getOrderForCurrentUser' api 
     3. Add Order Service method

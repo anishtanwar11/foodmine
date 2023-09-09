@@ -6,9 +6,8 @@ export class Order{
     totalPrice!: number;
     name!: string;
     address!: string;
-    // addressLatLng?:LatLng
     paymentId!: string;
     createdAt!: string;
     status!: string;
-  addressLatLng: any;
+    addressLatLng: any;
 }
